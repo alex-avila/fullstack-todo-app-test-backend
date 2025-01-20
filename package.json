@@ -13,6 +13,9 @@
   "simple-git-hooks": {
     "pre-commit": "pnpm type-check"
   },
+  "prisma": {
+    "seed": "tsx prisma/seed.ts"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
