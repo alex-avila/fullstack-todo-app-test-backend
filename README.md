@@ -1,6 +1,8 @@
 # Full Stack Todo App Backend
 
-An express.js application with Prisma (designed for MySQL). Meant to be used with this Next.js Frontend: INSERT FRONTEND REPO HERE
+An express.js application with Prisma (designed for MySQL).
+
+Meant to be used for the [Full Stack Todo App Frontend](https://github.com/alex-avila/fullstack-todo-app-test-frontend).
 
 ## Prerequisites
 
@@ -56,3 +58,5 @@ LTS versions of the following are recommended
    pnpm build
    pnpm start
    ```
+
+Open [http://localhost:5173](http://localhost:5173) (if that's still the `PORT`) with your browser and you should see "Hello world".
