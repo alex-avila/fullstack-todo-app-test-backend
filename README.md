@@ -32,13 +32,14 @@ LTS versions of the following are recommended
 
 1. Delete the `migrations` directory for this project at `./prisma/migrations`:
 
+    - _The command after this one will create a new `migrations` directory for you_
     ```bash
     rm -rf ./prisma/migrations
     ```
 
-2. Use the following command to create the table in your database:
+2. Use Prisma Migrate to create the table in your database:
 
-    - This command will also run the seed command found in package.json (`prisma.seed`)
+    - _This command will also run the seed command found in package.json (`prisma.seed`)_
 
     ```bash
     pnpm prisma migrate dev --name init
@@ -60,3 +61,5 @@ LTS versions of the following are recommended
    ```
 
 Open [http://localhost:5173](http://localhost:5173) (if that's still the `PORT`) with your browser and you should see "Hello world".
+
+With the server running, it is now set up to be used along with the [frontend](https://github.com/alex-avila/fullstack-todo-app-test-frontend).
