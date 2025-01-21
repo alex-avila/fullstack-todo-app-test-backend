@@ -12,10 +12,10 @@ const tasks: Prisma.TaskCreateInput[] = [
 async function main() {
   console.log(`Start seeding ...`);
   for (const task of tasks) {
-    const user = await prisma.task.create({
+    const createdTask = await prisma.task.create({
       data: task,
     });
-    console.log(`Created task with id: ${user.id}`);
+    console.log(`Created task with id: ${createdTask.id}`);
   }
   console.log(`Seeding finished.`);
 }
